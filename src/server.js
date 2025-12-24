@@ -9,7 +9,11 @@ const routes = require('./routes');
 
 const app = express();
 
-const whitelist = ['http://localhost:5173', process.env.CLIENT_URL];
+const whitelist = [
+  'http://localhost:5173',
+  'https://node-buoi-02.onrender.com',
+  process.env.CLIENT_URL
+];
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
