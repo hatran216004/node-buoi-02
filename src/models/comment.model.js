@@ -1,4 +1,4 @@
-const { loadDB, saveDB } = require('@/utils/jsonDB');
+const { loadDB, saveDB } = require('../../utils/jsonDB');
 
 class Comment {
   constructor() {

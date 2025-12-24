@@ -2,7 +2,7 @@ require('module-alias/register');
 const express = require('express');
 const cors = require('cors');
 
-const response = require('./src/utils/response');
+const response = require('./utils/response');
 const notFound = require('./src/middleware/notFound.middleware');
 
 const routes = require('./src/routes');
